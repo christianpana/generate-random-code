@@ -11,6 +11,8 @@ import {
     generateCouponCode,
 } from "./utils.js";
 
+import InfiniteLoopError from "./InfiniteLoopError.js";
+
 export {
     randomCode,
     generatePinCode,
@@ -19,6 +21,7 @@ export {
     generateSecurityCode,
     generateVerificationCode,
     generateCouponCode,
+    InfiniteLoopError,
 }
 
 export default randomCode

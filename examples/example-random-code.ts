@@ -1,5 +1,4 @@
-import { randomCode } from '../src/index.js';
-import InfiniteLoopError from "../src/InfiniteLoopError.js";
+import { randomCode, InfiniteLoopError} from '../src/index.js';
 
 console.log('Example 1:');
 console.log(
@@ -85,21 +84,13 @@ console.log(
 
 console.log('Example 11:');
 console.log(
-    randomCode(10, {
-        charset: 'AaAAaAaAAA',
-        letterCasing: 'mixed',
-    })
-); // Example output: "3iw5kywtaa"
-
-console.log('Example 12:');
-console.log(
     randomCode(20, {
         charset: 'HA',
         letterCasing: 'mixed',
     })
 ); // Example output: "hHHaahAHhHhHaahahhha" :)
 
-console.log('Example 13:');
+console.log('Example 12:');
 try {
     console.log(
         randomCode(30, {

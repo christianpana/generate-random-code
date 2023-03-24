@@ -9,6 +9,9 @@ is to create random codes for non-sensitive applications. Keep in mind that coll
 particularly when using a limited character set. Users are responsible for verifying that the generated
 codes are unique and collision-free.
 
+# Demo
+https://codesandbox.io/p/sandbox/generate-random-code-example-3m1pll
+
 # Installation
 
 ```bash
