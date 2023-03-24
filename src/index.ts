@@ -1,6 +1,6 @@
 import {
     randomCode,
-} from './random-code.js'
+} from './generate-random-code.js'
 
 import {
     generateAccessCode,

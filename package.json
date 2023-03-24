@@ -1,5 +1,5 @@
 {
-  "name": "random-code",
+  "name": "generate-random-code",
   "version": "1.0.0",
   "description": "",
   "files": [
@@ -13,21 +13,21 @@
       "import": "./dist/index.js"
     }
   },
-  "types": "types/ddb-update-expression.d.ts",
+  "types": "types/generate-random-code.d.ts",
   "scripts": {
     "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christianpana/random-code.git"
+    "url": "git+https://github.com/christianpana/generate-random-code.git"
   },
   "keywords": ["generator", "random", "security"],
   "author": "christianpana.com",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/christianpana/random-code/issues"
+    "url": "https://github.com/christianpana/generate-random-code/issues"
   },
-  "homepage": "https://github.com/christianpana/random-code#readme",
+  "homepage": "https://github.com/christianpana/generate-random-code#readme",
   "dependencies": {
     "badwords-list": "^1.0.0"
   },

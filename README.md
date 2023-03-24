@@ -1,4 +1,4 @@
-# random-code
+# generate-random-code
 
 A simple, customizable random code generator written in TypeScript. This package is ideal for 
 generating non-sensitive, random codes for various purposes, such as access codes, authentication codes, 
@@ -12,13 +12,13 @@ codes are unique and collision-free.
 # Installation
 
 ```bash
-npm install random-code
+npm install generate-random-code
 ```
 
 # Usage
 
 ```typescript
-import randomCode from 'random-code';
+import randomCode from 'generate-random-code';
 
 // Basic usage
 const code = randomCode();
@@ -82,7 +82,7 @@ import {
     generateAuthCode,
     generateSecurityCode,
     generateVerificationCode,
-} from 'random-code';
+} from 'generate-random-code';
 
 console.log('generatePinCode examples:');
 console.log(generatePinCode()); // Example output: "1249"

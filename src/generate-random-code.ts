@@ -1,4 +1,4 @@
-import {RandomCodeOptions} from "../types/random-code.js";
+import {RandomCodeOptions} from "../types/generate-random-code.js";
 import BadWordsList from 'badwords-list';
 import InfiniteLoopError from "./InfiniteLoopError.js";
 

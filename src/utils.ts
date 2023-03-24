@@ -1,4 +1,4 @@
-import {randomCode} from "./random-code.js";
+import {randomCode} from "./generate-random-code.js";
 
 export const generatePinCode = (length: number = 4): string => {
     return randomCode(length, {
