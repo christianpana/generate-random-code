@@ -44,6 +44,7 @@ console.log(customOptionsCode);
 # Options
 
 The randomCode() function accepts two optional parameters:
+
 - `length`?: (number) The length of the generated code (default is 8).
 - `options`?: (object) An optional object with the following properties:
   - `charset`?: (string) An optional custom character set provided by the user. If charset is provided, it overrides characterSet.
@@ -55,6 +56,7 @@ The randomCode() function accepts two optional parameters:
   - `excludeBadWords`?: (string[]) An optional array of bad words to exclude.
 
 Notes:
+
 - If `charset` is provided, it takes precedence over `characterSet`.
 - Use `excludeDefaultSimilarChars` to exclude the default set of similar characters, or provide your own set using `excludeSimilarChars`.
 - Use `excludeDefaultBadWords` to exclude the default list of bad words, or provide your own list using `excludeBadWords`.
@@ -110,7 +112,6 @@ console.log('generateCouponCode examples:');
 console.log(generateCouponCode()); // Example output: "LR68LIF1ES0XB96NM1DZ"
 console.log(generateCouponCode()); // Example output: "GGNOETNYXFWLXDZW1AS1"
 console.log(generateCouponCode()); // Example output: "0H8E3PCRI4E6DHNL9D35"
-
 ```
 
 # Default similar chars
