@@ -1,7 +1,7 @@
 # generate-random-code
 
-A simple, customizable random code generator written in TypeScript. This package is ideal for 
-generating non-sensitive, random codes for various purposes, such as access codes, authentication codes, 
+A simple, customizable random code generator written in TypeScript. This package is ideal for
+generating non-sensitive, random codes for various purposes, such as access codes, authentication codes,
 security codes, verification codes, pin codes, coupon codes or unique identifiers.
 
 Please note that this package is not intended for generating secure passwords. Its primary purpose
@@ -10,6 +10,7 @@ particularly when using a limited character set. Users are responsible for verif
 codes are unique and collision-free.
 
 # Demo
+
 https://codesandbox.io/p/sandbox/generate-random-code-example-3m1pll
 
 # Installation
@@ -25,12 +26,12 @@ import randomCode from 'generate-random-code';
 
 // Basic usage
 const code = randomCode();
-console.log(code); 
+console.log(code);
 // Example output: "AB1C2"
 
 // Custom length
 const customLengthCode = randomCode(10);
-console.log(customLengthCode); 
+console.log(customLengthCode);
 // Example output: "A1B2C3D4E5"
 
 // Custom options
@@ -47,11 +48,12 @@ const options = {
   letterCasing: 'mixed',
 };
 const customOptionsCode = randomCode(10, options);
-console.log(customOptionsCode); 
+console.log(customOptionsCode);
 // Example output: "Edc47uMqah"
 ```
 
 # Options
+
 The `randomCode()` function accepts two optional parameters:
 
 - `length?`: (number) The length of the generated code (default is 5).
@@ -68,7 +70,8 @@ The `randomCode()` function accepts two optional parameters:
   - `letterCasing?`: (string) An optional value to specify the desired letter casing for the generated code. Possible values are 'uppercase', 'lowercase', and 'mixed'.
 
 # Helpers
-The following helper functions come with a predefined set of options for your convenience. 
+
+The following helper functions come with a predefined set of options for your convenience.
 Please note that these presets are not based on any specific standard and are provided as a starting point for your use case.
 
 1. `generatePinCode`: Generates a numeric PIN code of the specified length (default is 4).
@@ -76,15 +79,15 @@ Please note that these presets are not based on any specific standard and are pr
 3. `generateAuthCode`: Produces a numeric authentication code with the given length (default is 6).
 4. `generateSecurityCode`: Generates an alphanumeric security code with mixed casing and the specified length (default is 6).
 5. `generateVerificationCode`: Creates a numeric verification code without similar characters and with the given length (default is 5).
-5. `generateCouponCode`: Generates an uppercase alphanumeric coupon code without bad words, with a default length of 20 characters.
+6. `generateCouponCode`: Generates an uppercase alphanumeric coupon code without bad words, with a default length of 20 characters.
 
 ```typescript
 import {
-    generatePinCode,
-    generateAccessCode,
-    generateAuthCode,
-    generateSecurityCode,
-    generateVerificationCode,
+  generatePinCode,
+  generateAccessCode,
+  generateAuthCode,
+  generateSecurityCode,
+  generateVerificationCode,
 } from 'generate-random-code';
 
 console.log('generatePinCode examples:');
@@ -119,15 +122,19 @@ console.log(generateCouponCode()); // Example output: "0H8E3PCRI4E6DHNL9D35"
 ```
 
 # Default similar chars
+
 The following characters are excluded if the `excludeSimilarChars` option is set to `true`
+
 ```
 B8Il1O0S5
 ```
+
 However, you can provide your own list by setting the `similarChars` option.
-Alternatively, you can provide a custom character list using the `charset` option that 
+Alternatively, you can provide a custom character list using the `charset` option that
 doesn't include the chars you wish to avoid.
 
 # Disclaimer
-This package isn't designed for secure password generation but rather for creating 
-non-sensitive random codes. Be aware that collisions can happen, and it's the 
+
+This package isn't designed for secure password generation but rather for creating
+non-sensitive random codes. Be aware that collisions can happen, and it's the
 user's responsibility to ensure code uniqueness.
